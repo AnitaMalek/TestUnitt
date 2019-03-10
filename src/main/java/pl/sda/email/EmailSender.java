@@ -1,6 +1,6 @@
 package pl.sda.email;
 
-import pl.sda.user.User;
+import pl.sda.User;
 
 import java.util.Random;
 

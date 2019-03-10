@@ -2,10 +2,6 @@ package pl.sda;
 
 
 import pl.sda.email.EmailSender;
-import pl.sda.user.User;
-import pl.sda.user.UserDatabase;
-import pl.sda.user.UserService;
-import pl.sda.user.UserValidation;
 
 public class App {
     public static void main(String[] args) {

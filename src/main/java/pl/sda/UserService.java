@@ -1,4 +1,4 @@
-package pl.sda.user;
+package pl.sda;
 
 import pl.sda.email.EmailSender;
 
@@ -20,7 +20,7 @@ public class UserService {
 
     public User register(User user) {
         if (validation.validUser(user)
-                && !database.containsLogin(user.getEmail())) {
+                && !database.containsEmail(user.getEmail())) {
             database.add(user);
         }
 

@@ -1,4 +1,4 @@
-package pl.sda.user;
+package pl.sda;
 
 import java.util.Objects;
 

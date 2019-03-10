@@ -1,4 +1,4 @@
-package pl.sda.user;
+package pl.sda;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -8,7 +8,7 @@ public class UserDatabase {
     private Set<User> users = new HashSet<>();
 
     //Symulacja autogeneracji rosnących identyfikatorów dla nowych użytkowników.
-    private static int id = 0;
+    private int id = 0;
 
     public User add(User user) {
         user.setId(++id);
@@ -17,18 +17,18 @@ public class UserDatabase {
         return user;
     }
 
-    public boolean containsLogin(String login) {
+    public boolean containsEmail(String email) {
         for (User user : users) {
-            if (user.getEmail().equals(login)) {
+            if (user.getEmail().equals(email)) {
                 return true;
             }
         }
         return false;
     }
 
-    public User getByLogin(String login) {
+    public User getByEmail(String email) {
         for (User user : users) {
-            if (user.getEmail().equals(login)) {
+            if (user.getEmail().equals(email)) {
                 return user;
             }
         }
